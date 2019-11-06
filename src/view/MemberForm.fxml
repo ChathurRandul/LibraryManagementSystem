@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="memberPane" prefHeight="640.0" prefWidth="1260.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MemberFormController">
+   <children>
+      <ImageView fx:id="btnHome" fitHeight="75.0" fitWidth="100.0" layoutX="35.0" layoutY="35.0" onMouseClicked="#btnHome_OnMouseClicked" onMouseEntered="#btnHome_OnMouseEntered" onMouseExited="#btnHome_OnMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/home.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnNewMember" buttonType="RAISED" layoutX="316.0" layoutY="77.0" onAction="#btnNewMember_OnAction" prefHeight="40.0" prefWidth="135.0" style="-fx-background-color: #16a085;" text="New Member" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <Text layoutX="35.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Member ID">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="35.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="35.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="35.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="35.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact No">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="35.0" layoutY="435.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIC">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="35.0" layoutY="485.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="txtMemberId" editable="false" focusColor="#16a085" layoutX="150.0" layoutY="161.0" prefHeight="30.0" prefWidth="125.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtFirstName" focusColor="#16a085" layoutX="150.0" layoutY="211.0" prefHeight="30.0" prefWidth="300.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtLastName" focusColor="#16a085" layoutX="150.0" layoutY="261.0" prefHeight="30.0" prefWidth="300.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAddress" focusColor="#16a085" layoutX="150.0" layoutY="311.0" prefHeight="30.0" prefWidth="300.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtContactNo" focusColor="#16a085" layoutX="150.0" layoutY="361.0" prefHeight="30.0" prefWidth="300.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtNIC" focusColor="#16a085" layoutX="150.0" layoutY="411.0" prefHeight="30.0" prefWidth="300.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtEmail" focusColor="#16a085" layoutX="150.0" layoutY="461.0" prefHeight="30.0" prefWidth="300.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnAdd" buttonType="RAISED" layoutX="150.0" layoutY="531.0" onAction="#btnAdd_OnAction" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: #16a085;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane layoutX="485.0" prefHeight="640.0" prefWidth="780.0" style="-fx-background-color: #16a085;">
+         <children>
+            <TableView fx:id="tblMembers" layoutX="15.0" layoutY="151.0" prefHeight="420.0" prefWidth="750.0">
+              <columns>
+                <TableColumn prefWidth="63.0" text="ID" />
+                <TableColumn prefWidth="93.0" text="First Name" />
+                  <TableColumn prefWidth="90.0" text="Last Name" />
+                  <TableColumn minWidth="0.0" prefWidth="152.0" text="Address" />
+                  <TableColumn prefWidth="96.0" text="Contact No" />
+                  <TableColumn prefWidth="100.0" text="NIC" />
+                  <TableColumn prefWidth="155.0" text="Email" />
+              </columns>
+            </TableView>
+            <JFXButton fx:id="btnDelete" buttonType="RAISED" layoutX="640.0" layoutY="76.0" onAction="#btnDelete_OnAction" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: #c0392b;" text="Delete" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <TextField fx:id="txtSearch" layoutX="15.0" layoutY="76.0" prefHeight="40.0" prefWidth="596.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

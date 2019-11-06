@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="dashboardPane" prefHeight="640.0" prefWidth="1260.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardFormController">
+   <children>
+      <AnchorPane prefHeight="160.0" prefWidth="1260.0" style="-fx-background-color: #16a085;">
+         <children>
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="237.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Library Management System" textAlignment="CENTER">
+               <font>
+                  <Font name="Cantarell Extra Bold" size="60.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="btnMembers" fitHeight="225.0" fitWidth="300.0" layoutX="68.0" layoutY="288.0" onMouseClicked="#btnMembers_OnMouseClicked" onMouseEntered="#btnMembers_OnMouseEntered" onMouseExited="#btnMembers_OnMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/membership.png" />
+         </image>
+         
+      </ImageView>
+      <ImageView fx:id="btnCatalogue" fitHeight="225.0" fitWidth="300.0" layoutX="368.0" layoutY="288.0" onMouseClicked="#btnCatalogue_OnMouseClicked" onMouseEntered="#btnCatalogue_OnMouseEntered" onMouseExited="#btnCatalogue_OnMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/catalogue.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnIssueBook" fitHeight="225.0" fitWidth="300.0" layoutX="668.0" layoutY="288.0" onMouseClicked="#btnIssueBook_OnMouseClicked" onMouseEntered="#btnIssueBook_OnMouseEntered" onMouseExited="#btnIssueBook_OnMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/issuebook.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnReturnBook" fitHeight="225.0" fitWidth="300.0" layoutX="968.0" layoutY="288.0" onMouseClicked="#btnReturnBook_OnMouseClicked" onMouseEntered="#btnReturnBook_OnMouseEntered" onMouseExited="#btnReturnBook_OnMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/return.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
