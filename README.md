@@ -4,7 +4,7 @@ By Chathur Gunawardena.
 
 Keywords - Java , JavaFX, JDBC
 
-![JDBC_Logo](https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png)
+![JDBC_Logo](https://cdn.lynda.com/course/779748/779748-636851423308322531-16x9.jpg)
 
 #### Description
 
