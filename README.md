@@ -4,7 +4,7 @@ By Chathur Gunawardena.
 
 Keywords - Java , JavaFX, JDBC
 
-![JDBC_Logo](https://cdn.lynda.com/course/779748/779748-636851423308322531-16x9.jpg)
+![JDBC_Logo](https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/141px-Java_programming_language_logo.svg.png)
 
 #### Description
 
